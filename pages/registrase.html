@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/registrarse.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <section class="super-nav">20% de descuento en todos los productos</section>
+        <section>
+            <h1 class="nombre-tienda">
+                <a href="../index.html">
+                    <img src="https://pngimg.com/uploads/camera_lens/camera_lens_PNG57.png" width="100">
+                     <p><span> Local</span>
+                         <span class="span-titulo"> Store </span>
+                    </p>
+                </a>
+            </h1>
+        </section>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#"> Contacto </a></li>
+                <li><a href="./registrase.html">Registrarme</a></li>
+                <li><a href="#"> Ingresar </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <form action="" class="formulario">
+            <h1>Añade tu super</h1>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+                 <div class="form-divicion">  
+                     <!--sector izquierdo nombre fecha y textarea  -->
+                    <section class="form-left">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="fecha" id="">
+                        </div>
+                        <textarea name="descripcion" id="" cols="70" rows="13" placeholder="Descripcion"></textarea>
+                    </section>
+                    <!-- fin sector izquierdo -->
+                        
+                    <!-- sector derecho especie, imagen, poderes tipo de personaje -->
+                    <section class="form-right">
+                        <div>
+                            <label for="especie">Especie</label>
+                            <select name="especie" id="">
+                                <option value="Especie">Especie</option>
+                            </select>
+                        </div>
+                        <div class="custom-input-file">
+                            <label for="foto">Agregar Foto</label>
+                            <input type="file" name="foto" class="input-file">
+                        </div>
+                        <div class="seleccionar">
+                            <!-- sector de checkbox -->
+                            <div class="check">
+                                <p>poderes</p>
+                                <div>    
+                                    <label for="volar">
+                                        <input type="checkbox" name="volar" id="volar" >
+                                        Volar
+                                    </label>
+                                </div> 
+                                <div>      
+                                    <label for="SuperInteligencia">
+                                        <input type="checkbox" name="SuperInteligencia" id="SuperInteligencia">
+                                        SuperInteligencia
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="Vista-de-rayo-láser">
+                                        <input type="checkbox" name="Vista de rayo láser" id="Vista-de-rayo-láser">
+                                        Vista de rayo láser
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="Billetera-gorda">
+                                        <input type="checkbox" name="Billetera gorda" id="Billetera-gorda">
+                                        Billetera gorda
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- fin check box -->
+
+                            <!-- inicio radio button -->
+                            <div class="radio">
+                                <p>Tipo de personaje</p>
+                                
+                                    
+                                    <label for="heroe">
+                                        <input type="radio" name="heroe" id="heroe">
+                                        Héroe / Heroina
+                                    </label>
+                                
+                                
+                                    <label for="villano">
+                                        <input type="radio" name="villano" id="villano">
+                                        Villano / Villana
+                                    </label>
+                                
+                            </div>
+                            <!-- fin radio button -->
+                        </div>
+                    </section>
+                </div>
+            <!-- <select name="grupo" id="">
+                <optgroup label="america del sur">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Peru">Peru</option> 
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="España" autofocus>España</option>
+                    <option value="Alemania">Alemania</option>
+                </optgroup>
+            </select> -->
+            <button type="submit" class="btn-submit">Añadir</button>
+        </form>
+    </main>
+    <footer>
+        Todos los derechos reservados a FRONT END 1
+    </footer>
+</body>
+</html>
